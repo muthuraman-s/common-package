@@ -23,7 +23,7 @@
   },
   "require": {
     "php": ">=7.0.0",
-    "sphtech/sph_newsletter": "v1.6",
+    "sphtech/sph_newsletter": "1.6",
     "sphtech/sph_onesignal": "dev-master"
   }
 }
