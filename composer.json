@@ -1,0 +1,9 @@
+{
+  "name": "drupal-common/common-package",
+  "description": "Contrib",
+  "type": "project",
+  "homepage": "https://github.com/muthuraman-s/contrib-package",
+  "require": {
+    "php": ">=5.6",
+  },
+}
