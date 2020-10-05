@@ -25,5 +25,5 @@
     "php": ">=5.6",
     "sphtech/sph_newsletter": "dev-master",
     "sphtech/sph_onesignal": "dev-master"
-  },
+  }
 }
