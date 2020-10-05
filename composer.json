@@ -5,25 +5,25 @@
   "homepage": "https://github.com/muthuraman-s/common-package",
   "repositories": {
     "sph_newsletter": {
-          "type": "vcs",
-          "url": "git@github.com:SPHTech/sph_newsletter.git"
-      },
-      "sph_feeds": {
-          "type": "vcs",
-          "url": "git@github.com:SPHTech/sph_feeds.git"
-      },
-      "sph_onesignal": {
-          "type": "vcs",
-          "url": "git@github.com:SPHTech/sph_onesignal.git"
-      },
-      "sph_amp": {
-          "type": "vcs",
-          "url": "git@github.com:SPHTech/sph_amp.git"
-      }
+      "type": "vcs",
+      "url": "git@github.com:SPHTech/sph_newsletter.git"
+    },
+    "sph_feeds": {
+      "type": "vcs",
+      "url": "git@github.com:SPHTech/sph_feeds.git"
+    },
+    "sph_onesignal": {
+      "type": "vcs",
+      "url": "git@github.com:SPHTech/sph_onesignal.git"
+    },
+    "sph_amp": {
+      "type": "vcs",
+      "url": "git@github.com:SPHTech/sph_amp.git"
+    }
   },
   "require": {
-    "php": ">=5.6",
-    "sphtech/sph_newsletter": "dev-master",
+    "php": ">=7.0.0",
+    "sphtech/sph_newsletter": "v1.6",
     "sphtech/sph_onesignal": "dev-master"
   }
 }
