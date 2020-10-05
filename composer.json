@@ -1,8 +1,8 @@
 {
   "name": "drupal-common/common-package",
-  "description": "Contrib",
+  "description": "Common",
   "type": "project",
-  "homepage": "https://github.com/muthuraman-s/contrib-package",
+  "homepage": "https://github.com/muthuraman-s/common-package",
   "repositories": {
     "sph_newsletter": {
           "type": "vcs",
