@@ -1,0 +1,4 @@
+name: SPH Contrib Package
+description: Contrib common package
+core_version_requirement: '^8.9 || ^9'
+type: module
