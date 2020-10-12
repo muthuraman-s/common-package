@@ -88,5 +88,26 @@
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3",
     "zaporylie/composer-drupal-optimizations": "^1.0"
+  },
+  "extra": {
+    "composer-exit-on-patch-failure": true,
+    "patchLevel": {
+        "drupal/core": "-p2"
+    },
+    "installer-paths": {
+        "web/core": ["type:drupal-core"],
+        "web/libraries/{$name}": [
+            "type:drupal-library",
+            "type:bower-asset",
+            "type:npm-asset"
+        ],
+        "web/modules/contrib/{$name}": ["type:drupal-module"],
+        "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+        "web/modules/common/{$name}": ["type:drupal-sph-module"],
+        "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+        "web/themes/contrib/{$name}": ["type:drupal-theme"],
+        "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+        "drush/Commands/{$name}": ["type:drupal-drush"]
+    }
   }
 }
