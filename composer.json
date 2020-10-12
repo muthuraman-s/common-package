@@ -2,9 +2,12 @@
   "name": "sphcontrib/sph_contrib",
   "description": "contrib packages",
   "type": "drupal-sph-module",
-  "homepage": "https://github.com/muthuraman-s/common-package",
   "require": {
     "php": ">=7.0.0",
+    "composer/installers": "^1.2",
+    "drupal/core-composer-scaffold": "^8.8",
+    "drupal/core-project-message": "^8.8",
+    "drupal/core-recommended": "^8.8",
     "oomphinc/composer-installers-extender": "^1.1",
     "slowprog/composer-copy-file": "~0.3",
     "bower-asset/dropzone": "^5.7",
@@ -89,25 +92,49 @@
     "webmozart/path-util": "^2.3",
     "zaporylie/composer-drupal-optimizations": "^1.0"
   },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
   "extra": {
     "composer-exit-on-patch-failure": true,
     "patchLevel": {
-        "drupal/core": "-p2"
+      "drupal/core": "-p2"
     },
     "installer-paths": {
-        "web/core": ["type:drupal-core"],
-        "web/libraries/{$name}": [
-            "type:drupal-library",
-            "type:bower-asset",
-            "type:npm-asset"
-        ],
-        "web/modules/contrib/{$name}": ["type:drupal-module"],
-        "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-        "web/modules/common/{$name}": ["type:drupal-sph-module"],
-        "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-        "web/themes/contrib/{$name}": ["type:drupal-theme"],
-        "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-        "drush/Commands/{$name}": ["type:drupal-drush"]
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "web/modules/common/{$name}": [
+        "type:drupal-sph-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "web/themes/custom/{$name}": [
+        "type:drupal-custom-theme"
+      ],
+      "drush/Commands/{$name}": [
+        "type:drupal-drush"
+      ]
     }
   }
 }
